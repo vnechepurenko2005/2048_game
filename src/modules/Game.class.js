@@ -73,8 +73,8 @@ class Game {
       }
 
       if (emptyCells.length > 0) {
-        const [r, c] =
-          emptyCells[Math.floor(Math.random() * emptyCells.length)];
+        const [r, c]
+          = emptyCells[Math.floor(Math.random() * emptyCells.length)];
 
         this.field[r][c] = Math.random() < 0.9 ? 2 : 4;
       }
@@ -119,8 +119,8 @@ class Game {
       }
 
       if (emptyCells.length > 0) {
-        const [r, c] =
-          emptyCells[Math.floor(Math.random() * emptyCells.length)];
+        const [r, c]
+          = emptyCells[Math.floor(Math.random() * emptyCells.length)];
 
         this.field[r][c] = Math.random() < 0.9 ? 2 : 4;
       }
@@ -172,8 +172,8 @@ class Game {
       }
 
       if (emptyCells.length > 0) {
-        const [r, c] =
-          emptyCells[Math.floor(Math.random() * emptyCells.length)];
+        const [r, c]
+          = emptyCells[Math.floor(Math.random() * emptyCells.length)];
 
         this.field[r][c] = Math.random() < 0.9 ? 2 : 4;
       }
@@ -226,8 +226,8 @@ class Game {
       }
 
       if (emptyCells.length > 0) {
-        const [r, c] =
-          emptyCells[Math.floor(Math.random() * emptyCells.length)];
+        const [r, c]
+          = emptyCells[Math.floor(Math.random() * emptyCells.length)];
 
         this.field[r][c] = Math.random() < 0.9 ? 2 : 4;
       }
@@ -282,8 +282,8 @@ class Game {
     for (let i = 0; i < 4; i++) {
       for (let j = 0; j < 3; j++) {
         if (
-          this.field[i][j] === this.field[i][j + 1] ||
-          this.field[j][i] === this.field[j + 1][i]
+          this.field[i][j] === this.field[i][j + 1]
+          || this.field[j][i] === this.field[j + 1][i]
         ) {
           return 'playing';
         }
